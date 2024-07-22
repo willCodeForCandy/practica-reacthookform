@@ -3,10 +3,15 @@ import './Form.css';
 import MisteryBox from '../MisteryBox/MisteryBox';
 
 const Form = ({ formFields, classSwitcher }) => {
-  const { handleSubmit, register, formState } = useForm();
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm();
+  console.log(errors);
   const submitForm = values => {
     classSwitcher('jump');
-    console.log(values, formState);
+    console.log(values);
   };
   return (
     <form onSubmit={handleSubmit(submitForm)}>
@@ -25,6 +30,11 @@ const Form = ({ formFields, classSwitcher }) => {
           <label htmlFor={field.name}>{field.name}</label>
         </div>
       ))}
+      <div className="alerts">
+        {errors.username && <p>{errors.username.message}</p>}
+        {errors.email && <p>{errors.email.message}</p>}
+        {errors.password && <p>{errors.password.message}</p>}
+      </div>
       <MisteryBox />
     </form>
   );

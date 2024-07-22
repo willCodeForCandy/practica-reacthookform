@@ -18,16 +18,8 @@ export const formFields = [
     name: 'password',
     pattern: {
       value: /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$/,
-      message: `<div>
-            <p>La contraseña debe contener:</p>
-            <ul>
-            <li>Entre 8 y 16 caracteres</li>
-            <li>1 letra mayúscula</li>
-            <li>1 letra minúscula</li>
-            <li>1 número</li>
-            <li>1 caracter especial</li>
-            </ul>
-            </div>`,
+      message:
+        'La contraseña debe contener: entre 8 y 16 caracteres, 1 letra mayúscula, 1 letra minúscula, 1 número, 1 caracter especial',
     },
   },
 ];

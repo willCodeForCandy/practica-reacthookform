@@ -57,3 +57,10 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px var(--skyblue) inset;
   -webkit-text-fill-color: var(--color-dark);
 }
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
