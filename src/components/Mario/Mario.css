@@ -1,0 +1,46 @@
+.mario {
+  background: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4717f552c59c347.png)
+    no-repeat;
+  background-size: 60px;
+  display: block;
+  width: 60px;
+  height: 55px;
+  position: fixed;
+  bottom: 20svh;
+  right: 60%;
+  transition: right 0.25s;
+}
+
+.mario.jump {
+  background-size: 60px;
+  display: block;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  right: 30%;
+  /* bottom: calc(30svh - 50px); */
+  animation: jump 0.4s 0.2s forwards;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 20svh;
+    background: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ee2ecc687ac3ded.png)
+      no-repeat;
+    background-size: 60px;
+  }
+  60% {
+    bottom: calc(30svh - 50px);
+    background: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ee2ecc687ac3ded.png)
+      no-repeat;
+    background-size: 60px;
+  }
+  100% {
+    bottom: 20svh;
+    background: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4717f552c59c347.png)
+      no-repeat;
+    background-size: 60px;
+    width: 60px;
+    height: 55px;
+  }
+}

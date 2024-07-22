@@ -1,0 +1,16 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+#root::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20svh;
+  background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/a0d4f96a4aa2122.png);
+  background-size: 2em;
+}

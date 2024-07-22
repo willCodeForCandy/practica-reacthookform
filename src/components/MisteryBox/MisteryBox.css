@@ -1,0 +1,16 @@
+.mistery-box {
+  display: block;
+  position: absolute;
+  bottom: 30svh;
+  right: 30%;
+  width: 60px;
+  height: 60px;
+  background: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/1d3110dedd750a9.png)
+    no-repeat;
+  background-size: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  transition: 0.3s;
+}

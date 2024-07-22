@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Plumber';
+  src: url('/assets/SuperPlumberBrothers-y00V.ttf') format('truetype');
+}
+:root {
+  font-family: 'Press Start 2P', system-ui;
+  line-height: 1.1;
+  font-weight: 400;
+
+  color: var(--onyx);
+  background-color: var(--skyblue);
+
+  --color-dark: rgba(57, 62, 65, 1);
+  --skyblue: #6096fe;
+  --color-light: rgba(211, 208, 203, 1);
+  --brick: #de5918;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
